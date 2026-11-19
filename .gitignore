@@ -1,0 +1,14 @@
+# Signing keys - never commit these
+*.jks
+*.keystore
+local.properties
+# Build outputs
+dist/
+build/
+# IDE
+.idea/
+*.iml
+.gradle/
+# OS
+.DS_Store
+Thumbs.db
