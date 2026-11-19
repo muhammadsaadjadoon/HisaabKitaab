@@ -5,7 +5,7 @@
 
   **A simple, private way to manage everyday finances.**
 
-  Track income, expenses and savings — all on your Android device.
+  Track income, expenses and savings, all on your Android device.
 
   <img src="https://img.shields.io/badge/Android-7.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android 7.0+" />
   <img src="https://img.shields.io/badge/Release-v6.0-116149?style=flat-square" alt="Version 6.0" />
@@ -30,7 +30,7 @@
 
 ## About
 
-**Hisaab Kitaab** is an offline Android personal and household finance manager. Record daily transactions, see your monthly balance, explore spending reports and export your records — without creating an account.
+**Hisaab Kitaab** is an offline Android personal and household finance manager. Record daily transactions, see your monthly balance, explore spending reports and export your records,  without creating an account.
 
 ### Highlights
 
