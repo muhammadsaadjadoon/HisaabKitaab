@@ -66,6 +66,7 @@ chmod +x build.sh
 ./build.sh
 
 # Output: dist/HisaabKitaab.apk
+The prebuilt APK shipped in this repository is `release/HisaabKitaab-v6.0.apk` (same v6.0 build).
 ```
 
 On Windows, use Git Bash or WSL with a compatible SDK installation. The build script asks for a keystore password when needed; if no keystore exists, it creates one. **Never commit signing keys or passwords.** A newly generated key cannot update the supplied APK in place.
@@ -77,6 +78,14 @@ python3 scripts/verify_release.py
 ```
 
 The supplied APK passed the included archive/source consistency checks. A fresh rebuild and real-device test were **not** performed in this environment; see [verification details](docs/VERIFICATION.md).
+
+## Manual QA checklist
+Before a release, run these checks on a real Android device:
+- [ ] Install the APK and open the dashboard
+- [ ] Add one income, one expense and one saving entry, and check the totals
+- [ ] Open Calendar, Reports and Monthly Records
+- [ ] Export PDF, Excel and CSV, and back up / restore JSON
+- [ ] Check back navigation, dark mode and settings
 
 ## Tech Stack
 
