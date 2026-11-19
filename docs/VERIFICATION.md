@@ -1,7 +1,7 @@
 # APK and source verification report
 
 **Audit date:** 19 November 2026  
-**Files supplied:** `HisaabKitaab.zip` and a separate `HisaabKitaab.apk`.
+**Files audited:** the project archive supplied on 19 November 2026 and the APK in this repository at `release/HisaabKitaab-v6.0.apk` (SHA-256 below).
 
 ## Results
 
@@ -25,7 +25,7 @@
 SHA-256: bc7368a6ca0657378988b9d31cedad518cd2c06a4d71b466b1c880fc86069bc7
 ```
 
-This hash applies to both the separately uploaded `HisaabKitaab.apk` and `release/HisaabKitaab-v6.0.apk` in the provided ZIP. The source repository's embedded `index.html` also matches the APK's embedded page byte-for-byte.
+This hash is the SHA-256 of `release/HisaabKitaab-v6.0.apk` in this repository, and it matched the separately supplied `HisaabKitaab.apk` at audit time.
 
 **Interpretation:** The ZIP and submitted binary clearly belong together at the asset/package-artifact level. This **does not prove** that rebuilding the source using the supplied script reproduces the APK, that compiled DEX is exactly derived from the supplied Java, or that the app passes functional/security tests.
 
@@ -49,6 +49,6 @@ bash build.sh
 sha256sum release/HisaabKitaab-v6.0.apk dist/HisaabKitaab.apk
 ```
 
-Compare version, package, signing certificate fingerprints and functional behavior. Equal SHA-256 hashes would prove identical APK files; different hashes can occur because of toolchain/signing differences. Install and perform the README manual-QA checklist on a suitable Android device.
+Compare version, package, signing certificate fingerprints and functional behavior. Equal SHA-256 hashes would prove identical APK files; different hashes can occur because of toolchain/signing differences. Install the APK and run the manual QA checklist in the README on a suitable Android device.
 
 **Caution:** The original keystore was not supplied. Generating a new signing key will **not** reproduce the original app's signing identity and may prevent updating an existing installation without data loss.
